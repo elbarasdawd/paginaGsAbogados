@@ -63,7 +63,7 @@ const fadeObserver = new IntersectionObserver((entries) => {
   });
 }, observerOptions);
 
-document.querySelectorAll('.service-card, .team-card, .testimonial-card, .contact-item, .nosotros-text, .nosotros-img, .section-header')
+document.querySelectorAll('.service-card, .team-card, .testimonial-card, .contact-item, .nosotros-text, .nosotros-img, .section-header, .plan-card')
   .forEach(el => {
     el.classList.add('fade-in');
     fadeObserver.observe(el);
@@ -167,6 +167,21 @@ form?.addEventListener('submit', (e) => {
     document.getElementById('form-success').classList.remove('hidden');
     setTimeout(() => document.getElementById('form-success').classList.add('hidden'), 6000);
   }, 1500);
+});
+
+// ---- FAQ ACORDEON ----
+document.querySelectorAll('.faq-question').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const isOpen = btn.getAttribute('aria-expanded') === 'true';
+    document.querySelectorAll('.faq-question').forEach(b => {
+      b.setAttribute('aria-expanded', 'false');
+      b.nextElementSibling.classList.remove('open');
+    });
+    if (!isOpen) {
+      btn.setAttribute('aria-expanded', 'true');
+      btn.nextElementSibling.classList.add('open');
+    }
+  });
 });
 
 // ---- ACTIVE NAV LINK on scroll ----

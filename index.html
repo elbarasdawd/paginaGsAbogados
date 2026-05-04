@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GS Abogados | Firma de Abogados</title>
+  <title>GS Abogados | Registro de Marca</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -11,197 +11,208 @@
   <!-- NAVBAR -->
   <header id="navbar">
     <div class="container nav-inner">
-      <a href="#inicio" class="logo">
-          <img src="media/Logos/Logo PNG/LOGOS_GS_Abogados-13.png" alt="GS Abogados" class="logo-img" />
+      <a href="#" class="logo">
+        <img src="media/Logos/Logo PNG/LOGOS_GS_Abogados-13.png" alt="GS Abogados" class="logo-img" />
       </a>
       <nav id="nav-links">
-        <a href="#inicio">Inicio</a>
-        <a href="#nosotros">Nosotros</a>
-        <a href="#servicios">Servicios</a>
-<a href="#contacto">Contacto</a>
+        <a href="#">Inicio</a>
+        <a href="#contacto">Contacto</a>
       </nav>
-      <button class="btn-primary nav-cta" onclick="scrollToSection('contacto')">Consulta Gratuita</button>
+      <a href="#contacto" class="btn-primary nav-cta">Consulta Gratuita</a>
       <button class="hamburger" id="hamburger" aria-label="Menú">
         <span></span><span></span><span></span>
       </button>
     </div>
   </header>
 
-  <!-- HERO -->
-  <section id="inicio" class="hero">
-    <div class="hero-overlay"></div>
-    <div class="container hero-content">
-      <p class="hero-eyebrow"></p>
-      <h1>Justicia con <span class="highlight">Excelencia</span><br/>y Compromiso</h1>
-      <p class="hero-desc">Defendemos sus derechos con rigor, ética y dedicación. Somos su aliado legal en los momentos más importantes de su vida.</p>
-      <div class="hero-actions">
-        <button class="btn-primary large" onclick="scrollToSection('contacto')">Agendar Consulta</button>
-        <button class="btn-outline large" onclick="scrollToSection('servicios')">Nuestros Servicios</button>
-      </div>
-      <div class="hero-stats">
-        <div class="stat"><span class="stat-num" data-target="5">0</span><span>+</span><p>Casos Ganados</p></div>
-        <div class="stat"><span class="stat-num" data-target="1">0</span><span></span><p>Año de Experiencia</p></div>
-        <div class="stat"><span class="stat-num" data-target="98">0</span><span>%</span><p>Clientes Satisfechos</p></div>
-      </div>
+  <!-- PAGE HERO -->
+  <section class="service-page-hero">
+    <div class="container">
+      <div class="service-page-icon">™️</div>
+      <h1>Registro de Marca</h1>
+      <p>Protege la identidad de tu negocio. Tu marca y logo son tu activo más valioso.</p>
     </div>
   </section>
 
-  <!-- NOSOTROS -->
-  <section id="nosotros" class="section nosotros">
-    <div class="container nosotros-grid">
-      <div class="nosotros-img">
-        <div class="img-placeholder">
-          <img src="media/Imagenes/abogados-santiago.webp" alt="Equipo GS Abogados" class="nosotros-photo" />
-        </div>
-      </div>
-      <div class="nosotros-text">
-        <p class="section-eyebrow">Sobre Nosotros</p>
-        <h2>Una Firma de Confianza,<br/>Resultados Comprobados</h2>
-        <p>Fundada en 2026, GS Abogados ha sido sinónimo de excelencia jurídica en toda la región. Nuestro equipo de abogados altamente calificados se compromete a brindar soluciones legales efectivas y personalizadas.</p>
-        <p>Creemos en la transparencia, la ética profesional y la comunicación constante con nuestros clientes. Cada caso es tratado con la máxima dedicación y atención al detalle.</p>
+  <!-- CONTENIDO -->
+  <section class="section service-page-content">
+    <div class="container">
+      <div class="service-page-body">
+        <h2>Tu marca, tu identidad</h2>
+        <p>Tu marca y logo son la imagen de tu negocio. ¿Qué sería de tu negocio si los pierdes? Registrar tu marca ante el INAPI (Instituto Nacional de Propiedad Industrial) te otorga el derecho exclusivo de uso en Chile y te protege frente a terceros que puedan intentar apropiarse de tu identidad comercial.</p>
+
+        <h2>¿Qué incluye nuestro servicio?</h2>
         <ul class="check-list">
-          <li><span class="check">✓</span> Asesoría legal personalizada</li>
-          <li><span class="check">✓</span> Equipo multidisciplinario</li>
-          <li><span class="check">✓</span> Honorarios transparentes</li>
-          <li><span class="check">✓</span> Disponibilidad 24/7 en emergencias</li>
+          <li><span class="check">✓</span> Búsqueda de anterioridades para evaluar disponibilidad de la marca</li>
+          <li><span class="check">✓</span> Redacción y presentación de la solicitud ante el INAPI</li>
+          <li><span class="check">✓</span> Seguimiento del proceso de registro</li>
+          <li><span class="check">✓</span> Respuesta a oposiciones de terceros</li>
+          <li><span class="check">✓</span> Asesoría en renovaciones y cesiones de marca</li>
         </ul>
-        <button class="btn-primary" onclick="scrollToSection('contacto')">Contáctenos</button>
+
+        <h2>¿Cuándo registrar tu marca?</h2>
+        <p>Lo antes posible. En Chile rige el principio de "primer solicitante": quien registra primero tiene preferencia. No esperes a crecer para proteger tu marca; hazlo desde el inicio de tu emprendimiento.</p>
       </div>
     </div>
   </section>
 
-  <!-- SERVICIOS -->
-  <section id="servicios" class="section servicios bg-light">
+  <!-- CTA MARCA -->
+  <section class="section cta-marca">
+    <div class="container cta-marca-inner">
+      <a href="#planes" class="btn-cta-marca">¡Quiero registrar mi marca!</a>
+    </div>
+  </section>
+
+  <!-- PLANES -->
+  <section id="planes" class="section planes" style="background: #714832;">
     <div class="container">
       <div class="section-header">
-        <p class="section-eyebrow">Áreas de Práctica</p>
-        <h2>Nuestros Servicios Legales</h2>
-        <p class="section-desc">Ofrecemos asesoría integral en las principales ramas del derecho, con especialistas dedicados a cada área.</p>
+        <p class="section-eyebrow">Nuestros Planes</p>
+        <h2>Elige el Plan Ideal para tu Marca</h2>
+        <p class="section-desc">Contamos con opciones para cada etapa de tu negocio, desde emprendedores hasta empresas consolidadas.</p>
       </div>
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="service-icon">🏠</div>
-          <h3>Contratos Laborales para Trabajadores de Casa</h3>
-          <p>¿Tienes a una persona que te ayuda con las labores de la casa? Debe tener contrato de trabajo. Nosotros te ayudamos y asesoramos para que no incumplas la ley.</p>
-          <a href="servicios/contratos-laborales.html" class="service-link">Saber más →</a>
+      <div class="planes-grid">
+
+        <div class="plan-card fade-in">
+          <div class="plan-header">
+            <h3>Plan Básico</h3>
+            <div class="plan-price">$190.000 <span>CLP</span></div>
+          </div>
+          <p class="plan-desc">Ideal para emprendedores que están dando sus primeros pasos y necesitan proteger su marca de forma rápida y económica.</p>
+          <ul class="plan-features">
+            <li><span class="check">✓</span> Búsqueda de anterioridades</li>
+            <li><span class="check">✓</span> Presentación de solicitud ante el INAPI</li>
+            <li><span class="check">✓</span> 1 clase de productos o servicios</li>
+          </ul>
+          <a href="#contacto" class="btn-primary full-width plan-btn">Contratar Plan</a>
         </div>
-        <div class="service-card">
-          <div class="service-icon">💰</div>
-          <h3>Derecho Concursal</h3>
-          <p>Deudas, deudas y más deudas. Es una preocupación constante, pero te podemos ofrecer opciones.</p>
-          <a href="servicios/derecho-concursal.html" class="service-link">Saber más →</a>
+
+        <div class="plan-card plan-card--featured fade-in fade-in-delay-1">
+          <div class="plan-badge">Más Popular</div>
+          <div class="plan-header">
+            <h3>Plan Estándar</h3>
+            <div class="plan-price">$320.000 <span>CLP</span></div>
+          </div>
+          <p class="plan-desc">Para negocios en crecimiento que requieren protección completa y seguimiento durante todo el proceso de registro.</p>
+          <ul class="plan-features">
+            <li><span class="check">✓</span> Todo lo del Plan Básico</li>
+            <li><span class="check">✓</span> Seguimiento del proceso de registro</li>
+            <li><span class="check">✓</span> Respuesta a oposiciones de terceros</li>
+            <li><span class="check">✓</span> Hasta 2 clases de productos o servicios</li>
+          </ul>
+          <a href="#contacto" class="btn-primary full-width plan-btn">Contratar Plan</a>
         </div>
-        <div class="service-card">
-          <div class="service-icon">™️</div>
-          <h3>Registro de Marca</h3>
-          <p>Tu marca y logo son la imagen de tu negocio. ¿Qué sería de tu negocio si pierdes aquellos? Nosotros podemos ayudarte y proteger tu marca.</p>
-          <a href="servicios/registro-de-marca.html" class="service-link">Saber más →</a>
+
+        <div class="plan-card fade-in fade-in-delay-2">
+          <div class="plan-header">
+            <h3>Plan Premium</h3>
+            <div class="plan-price">$490.000 <span>CLP</span></div>
+          </div>
+          <p class="plan-desc">Para empresas que necesitan protección total de su identidad comercial, incluyendo renovaciones y cesiones de marca.</p>
+          <ul class="plan-features">
+            <li><span class="check">✓</span> Todo lo del Plan Estándar</li>
+            <li><span class="check">✓</span> Asesoría en renovaciones y cesiones</li>
+            <li><span class="check">✓</span> Clases ilimitadas de productos o servicios</li>
+            <li><span class="check">✓</span> Atención prioritaria</li>
+          </ul>
+          <a href="#contacto" class="btn-primary full-width plan-btn">Contratar Plan</a>
         </div>
-        <div class="service-card">
-          <div class="service-icon">👨‍👩‍👧</div>
-          <h3>Derecho de Familia</h3>
-          <p>¿Necesitas que te paguen la pensión de alimentos, o que cese el pago? ¿Necesitas terminar ese matrimonio? ¿Quieres ver a tus hijos? Nosotros podemos ayudarte.</p>
-          <a href="servicios/derecho-de-familia.html" class="service-link">Saber más →</a>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">💼</div>
-          <h3>Asesoramiento a PYMES</h3>
-          <p>Es emocionante poner en marcha un negocio. También sabemos que el proceso puede generar dudas e incertidumbre. Lo bueno es que nosotros podemos ayudarte.</p>
-          <a href="servicios/asesoramiento-pymes.html" class="service-link">Saber más →</a>
-        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- CTA BANNER -->
-  <section class="cta-banner">
-    <div class="container cta-inner">
-      <div>
-        <h2>¿Necesita Asesoría Legal?</h2>
-        <p>Primera consulta sin costo. Cuéntenos su caso y lo orientamos.</p>
+  <!-- PREGUNTAS FRECUENTES -->
+  <section class="section faq">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">FAQ</p>
+        <h2>Preguntas Frecuentes</h2>
+        <p class="section-desc">Resolvemos las dudas más comunes sobre el registro de marcas en Chile.</p>
       </div>
-      <div class="cta-actions">
-        <a href="tel:+525512345678" class="btn-outline large">📞 (+56) 9 1234 5678</a>
-        <button class="btn-primary large" onclick="scrollToSection('contacto')">Consulta Gratuita</button>
+      <div class="faq-list">
+
+<div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            ¿Qué se puede registrar como marca?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Se puede registrar cualquier signo distintivo capaz de diferenciar productos o servicios en el mercado: nombres comerciales, logotipos, frases publicitarias, formas tridimensionales, combinaciones de colores y sonidos, entre otros. No se pueden registrar términos genéricos ni descriptivos del producto.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            ¿Cuánto tiempo tiene validez una marca registrada?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>En Chile, una marca registrada tiene una vigencia de 10 años desde la fecha de su concesión. Al vencimiento, puede renovarse por períodos iguales de 10 años de forma indefinida, siempre que se solicite la renovación dentro del plazo establecido.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            ¿Qué es una "clase" de productos o servicios?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>El sistema internacional de marcas (Clasificación de Niza) divide los productos y servicios en 45 clases. Al registrar una marca, debes indicar en qué clase o clases deseas protegerla. Por ejemplo, ropa corresponde a la clase 25 y servicios legales a la clase 45. Registrar en más clases implica mayor cobertura y costo.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            ¿Puedo registrar mi marca si ya existe una similar?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Depende del grado de similitud y de las clases en que esté registrada la marca anterior. Por eso realizamos una búsqueda de anterioridades antes de presentar cualquier solicitud, para evaluar el riesgo y las posibilidades reales de éxito. En algunos casos es posible coexistir si los productos o servicios son distintos.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            ¿Qué pasa si alguien usa mi marca sin autorización?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Si tienes tu marca registrada, puedes ejercer acciones legales contra quien la use sin tu consentimiento: desde una carta de cese de uso hasta una demanda por infracción de propiedad industrial. Sin registro, tu protección es limitada y más difícil de hacer valer ante los tribunales.</p>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
   <!-- CONTACTO -->
-  <section id="contacto" class="section contacto bg-light">
-    <div class="container contacto-grid">
-      <div class="contacto-info">
+  <section id="contacto" class="section contacto-standalone bg-light">
+    <div class="container">
+      <div class="section-header">
         <p class="section-eyebrow">Contáctenos</p>
-        <h2>Estamos Listos para Ayudarle</h2>
-        <p>No enfrente sus problemas legales solo. Nuestro equipo está disponible para brindarle la orientación que necesita.</p>
-        <div class="contact-items">
-          <div class="contact-item">
-            <span class="contact-icon">📍</span>
-            <div>
-              <strong>Dirección</strong>
-              <p>Av. Pedro Aguirre Cerda <br/>Antofagasta, Chile</p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <span class="contact-icon">📞</span>
-            <div>
-              <strong>Teléfono</strong>
-              <p><a href="tel:+525512345678">(+56) 9 1234 5678</a></p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <span class="contact-icon">✉</span>
-            <div>
-              <strong>Correo Electrónico</strong>
-              <p><a href="mailto:contacto@gsabogados.cl">contacto@gsabogados.cl</a></p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <span class="contact-icon">🕐</span>
-            <div>
-              <strong>Horario de Atención</strong>
-              <p>Lunes – Viernes: 9:00 – 19:00<br/>Sábado: 10:00 – 14:00</p>
-            </div>
-          </div>
-        </div>
+        <h2>Solicitar Consulta Gratuita</h2>
+        <p class="section-desc">Cuéntenos su caso y nos pondremos en contacto en menos de 24 horas.</p>
       </div>
-      <div class="contacto-form">
+      <div class="contacto-form contacto-standalone-form">
         <form id="contactForm" novalidate>
-          <h3>Solicitar Consulta Gratuita</h3>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="nombre">Nombre Completo *</label>
-              <input type="text" id="nombre" name="nombre" placeholder="Juan García" required />
-              <span class="error-msg" id="nombre-error"></span>
-            </div>
-            <div class="form-group">
-              <label for="email">Correo Electrónico *</label>
-              <input type="email" id="email" name="email" placeholder="juan@correo.com" required />
-              <span class="error-msg" id="email-error"></span>
-            </div>
+          <div class="form-group">
+            <label for="nombre">Nombre Completo *</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Juan García" required />
+            <span class="error-msg" id="nombre-error"></span>
           </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="telefono">Teléfono</label>
-              <input type="tel" id="telefono" name="telefono" placeholder="(+56) 1 2345 6789" />
-            </div>
-            <div class="form-group">
-              <label for="area">Área Legal *</label>
-              <select id="area" name="area" required>
-                <option value="">Seleccionar área...</option>
-                <option>Contratos Laborales para Trabajadores de Casa</option>
-                <option>Derecho Concursal</option>
-                <option>Registro de Marca</option>
-                <option>Derecho de Familia</option>
-                <option>Asesoramiento a PYMES</option>
-                <option>Otro</option>
-              </select>
-              <span class="error-msg" id="area-error"></span>
-            </div>
+          <div class="form-group">
+            <label for="email">Correo Electrónico *</label>
+            <input type="email" id="email" name="email" placeholder="juan@correo.com" required />
+            <span class="error-msg" id="email-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="(+56) 1 2345 6789" />
           </div>
           <div class="form-group">
             <label for="mensaje">Describa su Caso *</label>
-            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntenos brevemente su situación legal..." required></textarea>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntenos brevemente su situación..." required></textarea>
             <span class="error-msg" id="mensaje-error"></span>
           </div>
           <div class="form-group checkbox-group">
@@ -224,8 +235,8 @@
   <footer class="footer">
     <div class="container footer-grid">
       <div class="footer-brand">
-        <a href="#inicio" class="logo">
-          <img src="media/Logos/Logo PNG/LOGOS_GS_Abogados-13.png" alt="GS Abogados Abogados" class="logo-img" />
+        <a href="#" class="logo">
+          <img src="media/Logos/Logo PNG/LOGOS_GS_Abogados-13.png" alt="GS Abogados" class="logo-img" />
         </a>
         <p>Defendiendo sus derechos con excelencia y compromiso desde 2026.</p>
         <div class="social-links">
@@ -238,17 +249,16 @@
       <div class="footer-col">
         <h4>Servicios</h4>
         <ul>
-          <li><a href="#servicios">Contratos Laborales para Trabajadores de Casa</a></li>
-          <li><a href="#servicios">Derecho Concursal</a></li>
-          <li><a href="#servicios">Registro de Marca</a></li>
-          <li><a href="#servicios">Derecho de Familia</a></li>
-          <li><a href="#servicios">Asesoramiento a PYMES</a></li>
+          <li><a href="servicios/contratos-laborales.html">Contratos Laborales para Trabajadores de Casa</a></li>
+          <li><a href="servicios/derecho-concursal.html">Derecho Concursal</a></li>
+          <li><a href="#">Registro de Marca</a></li>
+          <li><a href="servicios/derecho-de-familia.html">Derecho de Familia</a></li>
+          <li><a href="servicios/asesoramiento-pymes.html">Asesoramiento a PYMES</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>La Firma</h4>
         <ul>
-          <li><a href="#nosotros">Sobre Nosotros</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
       </div>
@@ -273,7 +283,6 @@
     </div>
   </footer>
 
-  <!-- BACK TO TOP -->
   <button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Volver arriba">↑</button>
 
   <script src="script.js"></script>

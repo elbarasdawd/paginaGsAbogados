@@ -156,10 +156,10 @@ h3 { font-family: var(--font-serif); font-size: 1.35rem; }
   z-index: 1000;
   padding: 1rem 0;
   transition: var(--transition);
-  background: transparent;
+  background: #323F26;
 }
 #navbar.scrolled {
-  background: var(--dark);
+  background: #323F26;
   padding: 0.6rem 0;
   box-shadow: 0 2px 20px rgba(0,0,0,0.4);
 }
@@ -199,9 +199,10 @@ h3 { font-family: var(--font-serif); font-size: 1.35rem; }
   background: var(--green);
   transition: width 0.3s;
 }
-#nav-links a:hover { color: var(--green); }
-#nav-links a:hover::after { width: 100%; }
-.nav-cta { margin-left: 1rem; }
+#nav-links a:hover { color: var(--white); }
+#nav-links a:hover::after { width: 100%; background: var(--white); }
+.nav-cta { margin-left: 1rem; background: var(--white); color: var(--green); border-color: var(--white); }
+.nav-cta:hover { background: rgba(255,255,255,0.85); color: var(--green); border-color: var(--white); }
 .hamburger {
   display: none;
   flex-direction: column;
@@ -704,6 +705,7 @@ h3 { font-family: var(--font-serif); font-size: 1.35rem; }
   gap: 3rem;
   align-items: start;
 }
+.service-page-body { text-align: center; max-width: 800px; margin: 0 auto; }
 .service-page-body h2 {
   font-family: var(--font-serif);
   font-size: 1.4rem;
@@ -712,12 +714,243 @@ h3 { font-family: var(--font-serif); font-size: 1.35rem; }
 }
 .service-page-body h2:first-child { margin-top: 0; }
 .service-page-body p { color: var(--text-light); line-height: 1.8; margin-bottom: 1rem; }
-.service-page-body .check-list { margin: 1rem 0; }
+.service-page-body .check-list { margin: 1rem 0; text-align: left; display: inline-block; }
 .service-page-form { position: sticky; top: 100px; }
 
 @media (max-width: 900px) {
   .service-page-grid { grid-template-columns: 1fr; }
   .service-page-form { position: static; }
+}
+
+/* =============================================
+   CTA MARCA
+   ============================================= */
+.cta-marca { padding: 3rem 0; }
+.cta-marca-inner { display: flex; justify-content: center; }
+.btn-cta-marca {
+  display: inline-block;
+  background: #323F26;
+  color: var(--white);
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 1.2rem 3rem;
+  border-radius: 50px;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  box-shadow: 0 6px 24px rgba(50,63,38,0.3);
+  transition: var(--transition);
+}
+.btn-cta-marca:hover {
+  background: #243318;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(50,63,38,0.4);
+}
+
+/* =============================================
+   PLANES
+   ============================================= */
+.planes .section-eyebrow,
+.planes .section-header h2,
+.planes .section-desc { color: var(--white); }
+
+.planes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+  align-items: start;
+}
+
+.plan-card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+  position: relative;
+  border: 1px solid rgba(255,255,255,0.25);
+  transition: var(--transition);
+}
+.plan-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+}
+
+/* Card destacada: blanco puro para contrastar */
+.plan-card--featured {
+  background: var(--white);
+  border: 2px solid var(--white);
+  transform: translateY(-8px);
+}
+.plan-card--featured:hover {
+  transform: translateY(-14px);
+  background: var(--white);
+}
+
+.plan-badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #323F26;
+  color: var(--white);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  white-space: nowrap;
+  border: 2px solid var(--white);
+}
+
+.plan-header { margin-bottom: 1rem; }
+
+.plan-header h3 {
+  font-size: 1.4rem;
+  color: var(--dark);
+  margin-bottom: 0.5rem;
+}
+.plan-price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #323F26;
+}
+.plan-price span {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-light);
+}
+.plan-desc {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+.plan-features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+}
+.plan-features li {
+  font-size: 0.9rem;
+  color: var(--dark);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.plan-features li .check { color: #323F26; }
+
+/* Texto en card destacada (fondo blanco): colores oscuros */
+.plan-card--featured .plan-header h3 { color: #323F26; }
+.plan-card--featured .plan-price { color: #323F26; }
+.plan-card--featured .plan-price span { color: var(--text-light); }
+.plan-card--featured .plan-desc { color: var(--text-light); }
+.plan-card--featured .plan-features li { color: var(--dark); }
+.plan-card--featured .plan-features li .check { color: #323F26; }
+
+/* Botones en cards regulares: contorno blanco */
+.plan-card .btn-outline {
+  border-color: rgba(255,255,255,0.6);
+  color: var(--white);
+}
+.plan-card .btn-outline:hover {
+  background: var(--white);
+  color: #323F26;
+  border-color: var(--white);
+}
+
+/* Botón en card destacada */
+.plan-card--featured .btn-primary {
+  background: #323F26;
+  border-color: #323F26;
+}
+.plan-card--featured .btn-primary:hover {
+  background: #243318;
+  border-color: #243318;
+}
+
+.plan-btn { text-align: center; display: block; }
+
+@media (max-width: 768px) {
+  .planes-grid { grid-template-columns: 1fr; }
+  .plan-card--featured { transform: translateY(0); }
+}
+
+/* =============================================
+   CONTACTO STANDALONE
+   ============================================= */
+.contacto-standalone-form {
+  max-width: 680px;
+  margin: 3rem auto 0;
+  background: var(--white);
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: var(--shadow);
+}
+
+/* =============================================
+   FAQ
+   ============================================= */
+.faq-list {
+  max-width: 800px;
+  margin: 3rem auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.faq-item {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--white);
+}
+.faq-question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--dark);
+  text-align: left;
+  transition: var(--transition);
+}
+.faq-question:hover { background: var(--bg-light); }
+.faq-question[aria-expanded="true"] { color: var(--green); }
+.faq-icon {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: var(--green);
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+  line-height: 1;
+}
+.faq-question[aria-expanded="true"] .faq-icon { transform: rotate(45deg); }
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  padding: 0 1.5rem;
+}
+.faq-answer.open {
+  max-height: 300px;
+  padding: 0 1.5rem 1.25rem;
+}
+.faq-answer p {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  line-height: 1.8;
+  border-left: 3px solid var(--green);
+  padding-left: 1rem;
 }
 
 /* =============================================
