@@ -63,7 +63,7 @@ const fadeObserver = new IntersectionObserver((entries) => {
   });
 }, observerOptions);
 
-document.querySelectorAll('.service-card, .team-card, .testimonial-card, .contact-item, .nosotros-text, .nosotros-img, .section-header, .plan-card')
+document.querySelectorAll('.service-card, .team-card, .testimonial-card, .contact-item, .nosotros-text, .nosotros-img, .section-header, .plan-card, .garantia-card')
   .forEach(el => {
     el.classList.add('fade-in');
     fadeObserver.observe(el);

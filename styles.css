@@ -821,6 +821,33 @@ h3 { font-family: var(--font-serif); font-size: 1.35rem; }
   font-weight: 400;
   color: var(--text-light);
 }
+.plan-discount-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.4rem;
+}
+.discount-tag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background: #323F26;
+  color: #fff;
+  padding: 0.2rem 0.55rem;
+  border-radius: 20px;
+}
+.plan-original {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+.plan-price .discount-tag,
+.plan-card--featured .plan-price .discount-tag {
+  color: #fff;
+}
 .plan-desc {
   font-size: 0.9rem;
   color: var(--text-light);
@@ -889,6 +916,44 @@ h3 { font-family: var(--font-serif); font-size: 1.35rem; }
   border-radius: 12px;
   padding: 2.5rem;
   box-shadow: var(--shadow);
+}
+
+/* =============================================
+   GARANTÍA DE SATISFACCIÓN
+   ============================================= */
+.garantia-grid {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.garantia-card {
+  max-width: 420px;
+  width: 100%;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem 2rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  transition: var(--transition);
+}
+.garantia-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+.garantia-icon {
+  font-size: 2.8rem;
+  margin-bottom: 1.25rem;
+}
+.garantia-card h3 {
+  font-size: 1.15rem;
+  color: var(--dark);
+  margin-bottom: 0.75rem;
+}
+.garantia-card p {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  line-height: 1.75;
 }
 
 /* =============================================
